@@ -1,9 +1,11 @@
 name: Start index.js
 on: push
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: get code
-      uses: actions/checkout@v3
-    - name: node file
-      run: node index
+  node:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get code
+        uses: actions/checkout@v3
+      - name: node file
+        run: node index
+0
