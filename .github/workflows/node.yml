@@ -9,4 +9,4 @@ jobs:
       - name: node file
         run: node index
       - name: print context
-        run: echo "${{github}}"
+        run: echo "${{toJSON(github)}}"
