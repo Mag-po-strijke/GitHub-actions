@@ -1,5 +1,9 @@
 name: Start index.js
-on: push
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 jobs:
   node:
     runs-on: ubuntu-latest
